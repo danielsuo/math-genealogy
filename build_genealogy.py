@@ -11,7 +11,7 @@ def generate_dot(mathid):
     call(['ggrapher','-f',fn,'-a',mathid])  # Geneagrapher
 
 def make_graph(mathid,outfmt='pdf'):
-    gc = graph_from_dot_file(TMP+'{}.dot'.format(mathid))
+    gc = graph_from_dot_file(TMP+'{}.dot'.format(mathid))[0]
     gc.set_overlap(0)
 
     if 'png' in outfmt:
