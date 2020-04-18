@@ -3,18 +3,20 @@ math-genealogy
 A python script to collect data from the mathematics genealogy project and
 generate genealogy graphs, combine graphs, etc.
 
-## Usage:
+## Requirements
+- Python 2 (unfortunately)
+- [graphviz](https://graphviz.gitlab.io/)
 
-    python build_genealogy <mathID>
-    
-    
 ## One-time Setup:
-
+    
     sudo apt-get install graphviz graphviz-dev
     pip install -r requirements.txt
     
 Due to Geneagrapher 0.2.1, requires Python 2.
 
+## Usage:
+
+    python build_genealogy <mathID>
 
 --------------------------------------------------------------
 ## Script Usage:
